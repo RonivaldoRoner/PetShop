@@ -48,11 +48,7 @@ object NetworkAdapter {
 
     private fun loggingInterceptor(): Interceptor =
         HttpLoggingInterceptor().apply {
-            level = if (BuildConfig.DEBUG) {
-                HttpLoggingInterceptor.Level.BODY
-            } else {
-                HttpLoggingInterceptor.Level.NONE
-            }
+            level = HttpLoggingInterceptor.Level.BODY
         }
 
     private fun makeConverter(): Gson =

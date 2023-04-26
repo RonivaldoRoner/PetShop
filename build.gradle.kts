@@ -1,7 +1,7 @@
-
-plugins {
-    id("com.android.application") version "8.0.0" apply false
-    id("com.android.library") version "8.0.0" apply false
-    id("org.jetbrains.kotlin.android") version "1.8.10" apply false
-    id("org.jetbrains.kotlin.jvm") version "1.8.10" apply false
+plugins{
+    `kotlin-dsl`
+    id(Dependencies.Plugin.androidApplication) version Dependencies.Version.agp apply false
+    id(Dependencies.Plugin.androidLibrary) version Dependencies.Version.agp apply false
+    id(Dependencies.Plugin.kotlinAndroid) version Dependencies.Version.kotlin apply false
+    id(Dependencies.Plugin.kotlinJvm) version Dependencies.Version.kotlin apply false
 }
