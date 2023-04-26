@@ -31,7 +31,7 @@ android {
 
 dependencies {
     api(project(":domain"))
-    
+
     implementation(Dependencies.Android.okhttp)
     implementation(Dependencies.Android.okhttpLogging)
     implementation(Dependencies.Android.retrofit)
