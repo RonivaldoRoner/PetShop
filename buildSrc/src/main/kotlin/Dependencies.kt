@@ -15,6 +15,8 @@ object Dependencies {
         const val coreKtx = "1.10.0"
         const val lifecycleKtx = "2.6.1"
         const val koin = "3.1.5"
+        const val appCompat = "1.6.1"
+        const val navigation = "2.5.3"
 
         //Compose
         const val bomCompose = "2023.04.01"
@@ -40,7 +42,12 @@ object Dependencies {
     object Android {
         const val coreKtx = "androidx.core:core-ktx:${Version.coreKtx}"
         const val lifecycleKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Version.lifecycleKtx}"
-        const val koin = "io.insert-koin:koin-core:${Version.koin}"
+        const val koin = "io.insert-koin:koin-android:${Version.koin}"
+        const val koinCore = "io.insert-koin:koin-core:${Version.koin}"
+        const val appCompat = "androidx.appcompat:appcompat:${Version.appCompat}"
+        const val navigationFragment =
+            "androidx.navigation:navigation-fragment-ktx:${Version.navigation}"
+        const val navigationKtx = "androidx.navigation:navigation-ui-ktx:${Version.navigation}"
 
         //Compose
         const val bomCompose = "androidx.compose:compose-bom:${Version.bomCompose}"
@@ -51,10 +58,11 @@ object Dependencies {
         const val materialCompose = "androidx.compose.material3:material3"
 
         //Network
-        const val okhttp= "com.squareup.okhttp3:okhttp:${Version.okhttp}"
+        const val okhttp = "com.squareup.okhttp3:okhttp:${Version.okhttp}"
         const val okhttpLogging = "com.squareup.okhttp3:logging-interceptor:${Version.okhttp}"
-        const val retrofit= "com.squareup.retrofit2:retrofit:${Version.retrofit}"
-        const val retrofitGsonConverter= "com.squareup.retrofit2:converter-gson:${Version.retrofit}"
+        const val retrofit = "com.squareup.retrofit2:retrofit:${Version.retrofit}"
+        const val retrofitGsonConverter =
+            "com.squareup.retrofit2:converter-gson:${Version.retrofit}"
     }
 
     object Test {

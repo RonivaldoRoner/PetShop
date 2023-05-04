@@ -32,6 +32,8 @@ android {
 dependencies {
     api(project(":domain"))
 
+    implementation(Dependencies.Android.koinCore)
+
     implementation(Dependencies.Android.okhttp)
     implementation(Dependencies.Android.okhttpLogging)
     implementation(Dependencies.Android.retrofit)

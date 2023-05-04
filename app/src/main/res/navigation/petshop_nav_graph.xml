@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/petshop_nav_graph"
+    app:startDestination="@id/mktFragment">
+
+    <fragment
+        android:id="@+id/mktFragment"
+        android:name="com.ronivaldoroner.petshop.features.marketplace.MarketPlaceFragment"
+        android:label="MarketPlaceFragment"
+        />
+
+    <action
+        android:id="@+id/action_market_place_fragment"
+        app:destination="@id/mktFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popUpTo="@id/petshop_nav_graph"
+        app:popUpToInclusive="true"/>
+
+</navigation>

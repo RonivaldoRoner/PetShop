@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.ronivaldoroner.petshop.app"
+    namespace = "com.ronivaldoroner.petshop"
     compileSdkVersion(Dependencies.Config.compileSdk)
 
     defaultConfig {
@@ -20,9 +20,11 @@ android {
     buildTypes {
         named("release") {
             isMinifyEnabled = false
-            setProguardFiles(listOf(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro")
+            setProguardFiles(
+                listOf(
+                    getDefaultProguardFile("proguard-android-optimize.txt"),
+                    "proguard-rules.pro"
+                )
             )
         }
     }
@@ -55,6 +57,10 @@ dependencies {
 
     implementation(Dependencies.Android.coreKtx)
     implementation(Dependencies.Android.lifecycleKtx)
+    implementation(Dependencies.Android.appCompat)
+
+    implementation(Dependencies.Android.navigationFragment)
+    implementation(Dependencies.Android.navigationKtx)
 
     //Compose
     implementation(Dependencies.Android.activityCompose)
@@ -66,6 +72,8 @@ dependencies {
 
     //koin
     implementation(Dependencies.Android.koin)
+    implementation(Dependencies.Android.koinCore)
+
 
     testImplementation(Dependencies.Test.junit)
     androidTestImplementation(Dependencies.Test.testExtJunit)
