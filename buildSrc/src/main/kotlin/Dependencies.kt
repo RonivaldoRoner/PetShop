@@ -37,6 +37,7 @@ object Dependencies {
         const val androidLibrary = "com.android.library"
         const val kotlinAndroid = "org.jetbrains.kotlin.android"
         const val kotlinJvm = "org.jetbrains.kotlin.jvm"
+        const val navigationSafeArgs = "androidx.navigation.safeargs"
     }
 
     object Android {
