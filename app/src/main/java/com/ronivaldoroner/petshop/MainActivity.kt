@@ -3,7 +3,6 @@ package com.ronivaldoroner.petshop
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
-import com.ronivaldoroner.petshop.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.main_activity)
 
         navHostFragment.navController.setGraph(R.navigation.petshop_nav_graph, intent.extras)
     }
