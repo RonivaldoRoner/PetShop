@@ -1,9 +1,9 @@
-package com.ronivaldoroner.petshop.domain.features.products
+package com.ronivaldoroner.petshop.domain.features.marketplace
 
 import java.io.Serializable
 
 
-data class ProductsModel(
+data class MarketPlaceModel(
     val products : List<ProductModel>
 ): Serializable
 data class ProductModel(

@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -40,6 +41,7 @@ dependencies {
     implementation(Dependencies.Android.okhttpLogging)
     implementation(Dependencies.Android.retrofit)
     implementation(Dependencies.Android.retrofitGsonConverter)
+    implementation(Dependencies.Android.coreKtx)
 
 
     testImplementation(Dependencies.Test.junit)

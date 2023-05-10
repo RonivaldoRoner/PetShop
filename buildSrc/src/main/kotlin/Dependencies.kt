@@ -7,16 +7,20 @@ object Dependencies {
         const val targetSdk = 33
         const val versionCode = 1
         const val versionName = "1.0"
+        const val kotlinTarget = "1.8"
+        const val javaJvmTarget = "17"
     }
 
     object Version {
         const val agp = "8.0.0"
-        const val kotlin = "1.8.10"
+        const val kotlin = "1.8.21"
         const val coreKtx = "1.10.0"
         const val lifecycleKtx = "2.6.1"
+        const val lifecycleViewModel = "2.2.0"
         const val koin = "3.1.5"
         const val appCompat = "1.6.1"
         const val navigation = "2.5.3"
+        const val coroutines = "1.6.4"
 
         //Compose
         const val bomCompose = "2023.04.01"
@@ -41,6 +45,9 @@ object Dependencies {
     }
 
     object Android {
+        const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.coroutines}"
+        const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Version.coroutines}"
+        const val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Version.lifecycleViewModel}"
         const val coreKtx = "androidx.core:core-ktx:${Version.coreKtx}"
         const val lifecycleKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Version.lifecycleKtx}"
         const val koin = "io.insert-koin:koin-android:${Version.koin}"

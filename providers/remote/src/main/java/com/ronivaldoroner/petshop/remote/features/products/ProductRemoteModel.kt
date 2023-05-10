@@ -2,7 +2,7 @@ package com.ronivaldoroner.petshop.remote.features.products
 
 
 import com.google.gson.annotations.SerializedName
-import com.ronivaldoroner.petshop.domain.features.products.ProductModel
+import com.ronivaldoroner.petshop.domain.features.marketplace.ProductModel
 import java.io.Serializable
 
 data class ProductRemoteModel(

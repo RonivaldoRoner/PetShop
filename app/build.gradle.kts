@@ -76,6 +76,8 @@ dependencies {
     //koin
     implementation(Dependencies.Android.koin)
     implementation(Dependencies.Android.koinCore)
+    implementation(Dependencies.Android.coreKtx)
+    implementation(Dependencies.Android.lifecycleViewModel)
 
 
     testImplementation(Dependencies.Test.junit)
