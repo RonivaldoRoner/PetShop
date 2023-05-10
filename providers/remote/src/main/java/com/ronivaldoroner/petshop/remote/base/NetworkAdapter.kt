@@ -3,6 +3,7 @@ package com.ronivaldoroner.petshop.remote.base
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.ronivaldoroner.petshop.remote.constants.Route
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -22,6 +23,7 @@ object NetworkAdapter {
 
     private fun makeRetrofit(vararg interceptors: Interceptor): Retrofit =
         Retrofit.Builder()
+            .baseUrl(Route.BASE_URL)
             .client(makeHttpClient(interceptors))
             .addConverterFactory(GsonConverterFactory.create(makeConverter()))
             .build()
