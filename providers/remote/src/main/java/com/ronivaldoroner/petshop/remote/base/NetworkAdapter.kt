@@ -55,6 +55,7 @@ object NetworkAdapter {
 
     private fun makeConverter(): Gson =
         GsonBuilder()
+            .setLenient()
             .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
             .setPrettyPrinting()
             .setDateFormat(DateFormat.FULL)

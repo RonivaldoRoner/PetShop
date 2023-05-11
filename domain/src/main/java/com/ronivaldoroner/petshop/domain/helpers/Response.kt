@@ -7,7 +7,7 @@ sealed class Response<out T, out E> : Serializable {
         val response: T
     ) : Response<T, Nothing>()
 
-    open class ErrorResponse<out E>(
+    open class Error<out E>(
         val error: ErrorInformation,
     ) : Response<Nothing, E>()
 }

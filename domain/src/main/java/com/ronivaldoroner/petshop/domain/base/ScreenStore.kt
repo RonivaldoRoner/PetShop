@@ -38,6 +38,4 @@ class ScreenStore<T : Any>(
             }
         }
     }
-
-
 }

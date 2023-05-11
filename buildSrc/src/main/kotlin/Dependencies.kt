@@ -13,7 +13,8 @@ object Dependencies {
 
     object Version {
         const val agp = "8.0.0"
-        const val kotlin = "1.8.21"
+        const val kotlin = "1.8.10"
+        const val kotlinComposeCompile = "1.4.3"
         const val coreKtx = "1.10.0"
         const val lifecycleKtx = "2.6.1"
         const val lifecycleViewModel = "2.2.0"
@@ -29,6 +30,7 @@ object Dependencies {
         //Network
         const val retrofit = "2.9.0"
         const val okhttp = "4.10.0"
+        const val gson = "2.8.9"
 
         //Test
         const val jUnit = "4.13.2"
@@ -71,6 +73,7 @@ object Dependencies {
         const val retrofit = "com.squareup.retrofit2:retrofit:${Version.retrofit}"
         const val retrofitGsonConverter =
             "com.squareup.retrofit2:converter-gson:${Version.retrofit}"
+        const val gson = "com.google.code.gson:gson:${Version.gson}"
     }
 
     object Test {

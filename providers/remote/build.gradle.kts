@@ -42,6 +42,7 @@ dependencies {
     implementation(Dependencies.Android.retrofit)
     implementation(Dependencies.Android.retrofitGsonConverter)
     implementation(Dependencies.Android.coreKtx)
+    implementation(Dependencies.Android.gson)
 
 
     testImplementation(Dependencies.Test.junit)

@@ -1,10 +1,12 @@
 package com.ronivaldoroner.petshop.domain.features.marketplace
 
+import com.ronivaldoroner.petshop.domain.helpers.ResourceStatus
 import java.io.Serializable
 
 
-data class MarketPlaceModel(
-    val products : List<ProductModel>
+data class MarketPlaceScreen(
+    val status: ResourceStatus = ResourceStatus.Loading,
+    val products : List<ProductModel> = listOf()
 ): Serializable
 data class ProductModel(
     val amount: String,
