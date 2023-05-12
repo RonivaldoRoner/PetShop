@@ -22,6 +22,7 @@ object Dependencies {
         const val appCompat = "1.6.1"
         const val navigation = "2.5.3"
         const val coroutines = "1.6.4"
+        const val coil = "2.3.0"
 
         //Compose
         const val bomCompose = "2023.04.01"
@@ -66,6 +67,7 @@ object Dependencies {
         const val uiGraphicsCompose = "androidx.compose.ui:ui-graphics"
         const val uiPreviewCompose = "androidx.compose.ui:ui-tooling-preview"
         const val materialCompose = "androidx.compose.material3:material3"
+        const val coil = "io.coil-kt:coil-compose:${Version.coil}"
 
         //Network
         const val okhttp = "com.squareup.okhttp3:okhttp:${Version.okhttp}"

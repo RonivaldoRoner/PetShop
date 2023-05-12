@@ -13,7 +13,7 @@ class MarketPlaceFakeData : PreviewParameterProvider<MarketPlaceScreen> {
                 status = ResourceStatus.Loading
             ),
             MarketPlaceScreen(
-                status = ResourceStatus.Loading,
+                status = ResourceStatus.Ready,
                 products = listOf(
                     ProductModel(
                             id = 1,

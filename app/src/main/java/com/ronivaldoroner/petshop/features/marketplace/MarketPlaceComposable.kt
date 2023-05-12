@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import com.ronivaldoroner.petshop.domain.features.marketplace.MarketPlaceScreen
 import com.ronivaldoroner.petshop.domain.features.marketplace.ProductModel
 import com.ronivaldoroner.petshop.domain.helpers.ResourceStatus
+import com.ronivaldoroner.petshop.ui.commons.product.ProductItemComposable
 import com.ronivaldoroner.petshop.ui.theme.PetShopTheme
 
 interface MarketPlaceListeners {
@@ -46,16 +47,20 @@ fun MarketPlaceComposable(
 
             is ResourceStatus.Ready -> {
                 items(screen.products) {
-                    Box(modifier = Modifier.fillMaxWidth()) {
-                        Text(text = it.description)
-                    }
+                    ProductItemComposable(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(24.dp),
+                        data = it,
+                        onClick = listeners::itemClick
+                    )
                 }
             }
 
             is ResourceStatus.Error -> {
-                item{
-                    Text(text= "Aconteceu um erro por aqui")
-                    
+                item {
+                    Text(text = "Aconteceu um erro por aqui")
+
                     Spacer(modifier = Modifier.height(16.dp))
                 }
                 item {
@@ -76,7 +81,8 @@ fun MarketPlacePreview(
 ) {
     PetShopTheme {
         MarketPlaceComposable(
-            modifier = Modifier.fillMaxSize().padding(24.dp),
+            modifier = Modifier
+                .fillMaxSize(),
             screen = data,
             listeners = object : MarketPlaceListeners {
                 override fun itemClick(item: ProductModel) = Unit

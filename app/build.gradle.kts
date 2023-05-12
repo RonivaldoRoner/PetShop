@@ -72,6 +72,7 @@ dependencies {
     implementation(Dependencies.Android.uiGraphicsCompose)
     implementation(Dependencies.Android.uiPreviewCompose)
     implementation(Dependencies.Android.materialCompose)
+    implementation(Dependencies.Android.coil)
 
     //koin
     implementation(Dependencies.Android.koin)
